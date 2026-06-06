@@ -1,0 +1,7 @@
+# Ignore everything you don't want
+node_modules/
+.venv/
+__pycache__/
+*.db
+*.npy
+.DS_Store

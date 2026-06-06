@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WONTX AI | Continuous Behavioral Biometrics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #b4975a;
+            --slate-950: #020617;
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--slate-950);
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(180, 151, 90, 0.1);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #b4975a 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .math-block {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--gold);
+        }
+        .trust-pulse {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-white/5 py-4 px-8 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-[#b4975a] rounded-lg flex items-center justify-center font-bold text-slate-950">W</div>
+            <span class="heading-font text-xl font-bold tracking-tight">WONTX <span class="text-[#b4975a]">AI</span></span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+            <a href="#vision" class="hover:text-[#b4975a] transition-colors">Vision</a>
+            <a href="#architecture" class="hover:text-[#b4975a] transition-colors">Files & Tools</a>
+            <a href="#logic" class="hover:text-[#b4975a] transition-colors">RL Logic</a>
+            <a href="#telemetry" class="hover:text-[#b4975a] transition-colors">Telemetry</a>
+            <a href="#demo" class="hover:text-[#b4975a] transition-colors">Demo</a>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="vision" class="relative min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: radial-gradient(#b4975a 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+        <div class="max-w-5xl text-center z-10">
+            <h1 class="heading-font text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                Continuous <span class="gold-gradient">Behavioral Security</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+                Wontx AI provides an invisible security layer by analyzing the micro patterns of human hardware interaction. 
+                Our system moves away from "Point in Time" logins to "Continuous Trust."
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-[#b4975a] font-bold mb-2">The Purpose</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Prevent session hijacking and unauthorized physical access on unlocked devices by detecting identity mismatch within 2.5 seconds.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-[#b4975a] font-bold mb-2">The Tech Stack</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Python (Backend), SQLite (Edge Storage), NumPy (Matrix Ops), Chart.js (Dashboard), and Reinforcement Learning (Q-Learning Brain).</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-[#b4975a] font-bold mb-2">The Accuracy</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">76.26% Operational Accuracy. Note: Security is a spectrum; wontx prioritize "Security First" over convenience to ensure zero breaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture: File-by-File Logic -->
+    <section id="architecture" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="heading-font text-4xl font-bold mb-12 text-center">Project <span class="text-[#b4975a]">Architecture</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- File Item -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#b4975a]">
+                    <h3 class="font-bold text-lg mb-2">collector.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">Enrollment Engine</p>
+                    <p class="text-sm text-slate-400">Captures 1,000+ raw telemetry points for Velocity and Dwell time to build YOUR baseline digital DNA.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#b4975a]">
+                    <h3 class="font-bold text-lg mb-2">brain.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">Neural Kernel</p>
+                    <p class="text-sm text-slate-400">Implements the Q-Table and Bellman update logic. This is the persistent memory of the AI.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-[#b4975a]">
+                    <h3 class="font-bold text-lg mb-2">environment.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">Training Simulator</p>
+                    <p class="text-sm text-slate-400">A training ground where the AI practices identifying owners versus synthetic hacker profiles.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-blue-500">
+                    <h3 class="font-bold text-lg mb-2">agent.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">The Interpreter</p>
+                    <p class="text-sm text-slate-400">Converts raw mouse pixels and key milliseconds into State 0-10 for the Brain to analyze.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-red-500">
+                    <h3 class="font-bold text-lg mb-2">dashboard.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">Action Handler</p>
+                    <p class="text-sm text-slate-400">The primary UI. It monitors live telemetry and executes `LockWorkStation` if Trust falls < 20%.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-green-500">
+                    <h3 class="font-bold text-lg mb-2">analyzer.py</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase font-bold tracking-widest">Diagnostics</p>
+                    <p class="text-sm text-slate-400">Generates Stability Traces and Jitter Histograms to prove the uniqueness of the user's behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Accuracy Section to match Image -->
+    <section id="logic" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="heading-font text-4xl font-bold mb-6">Actual Accuracy: <span class="text-[#b4975a]">76.26%</span></h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        In initial tests, we claimed 94%, but that was <strong>Validation Accuracy</strong> (Clean data). 
+                        Real-world <strong>Operational Accuracy</strong> is lower because humans change patterns when tired, caffeinated, or using different desk surfaces.
+                    </p>
+                    
+                    <!-- Performance Matrix Grid -->
+                    <div class="glass p-8 rounded-[32px] mb-8 border-white/5">
+                        <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-6">How we calculated this</label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-emerald-500/10 p-6 rounded-2xl text-center border border-emerald-500/10">
+                                <div class="text-emerald-400 font-bold text-lg">TP: 82%</div>
+                                <div class="text-[10px] text-emerald-500/80 uppercase font-bold mt-1">Hacker Caught</div>
+                            </div>
+                            <div class="bg-slate-800/40 p-6 rounded-2xl text-center border border-white/5">
+                                <div class="text-slate-500 font-bold text-lg">FP: 12%</div>
+                                <div class="text-[10px] text-slate-600 uppercase font-bold mt-1">Owner Locked</div>
+                            </div>
+                            <div class="bg-slate-800/40 p-6 rounded-2xl text-center border border-white/5">
+                                <div class="text-slate-500 font-bold text-lg">FN: 3.4%</div>
+                                <div class="text-[10px] text-slate-600 uppercase font-bold mt-1">Breach Missed</div>
+                            </div>
+                            <div class="bg-blue-500/10 p-6 rounded-2xl text-center border border-blue-500/10">
+                                <div class="text-blue-400 font-bold text-lg">TN: 87.2%</div>
+                                <div class="text-[10px] text-blue-500/80 uppercase font-bold mt-1">Owner Trusted</div>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 italic text-center mt-6">Calculated via F1-Score: Harmonic mean of Precision and Recall</p>
+                    </div>
+
+                    <div class="math-block mb-8">
+                        <span class="text-[#b4975a]"># Q-Learning Logic Update</span><br>
+                        Q(s, a) = Q(s, a) + α [ R + γ max Q(s', a') - Q(s, a) ]
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="glass p-8 rounded-3xl">
+                        <h3 class="font-bold text-xl mb-4 gold-gradient uppercase tracking-tight">Why Q-Learning?</h3>
+                        <ul class="space-y-4 text-sm text-slate-400">
+                            <li class="flex gap-4"><span class="text-[#b4975a] font-bold">1.</span> It adapts without manual rule updates.</li>
+                            <li class="flex gap-4"><span class="text-[#b4975a] font-bold">2.</span> It handles "Noise" (micro movements) effectively.</li>
+                            <li class="flex gap-4"><span class="text-[#b4975a] font-bold">3.</span> Off policy learning allows to optimize for maximum security stability.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-6 glass rounded-2xl border-l-4 border-[#b4975a]">
+                        <h4 class="font-bold text-sm">Jitter (Micro-shaking)</h4>
+                        <p class="text-xs text-slate-400 mt-2">The variance in velocity between telemetry packets. Humans have unique muscular noise; bots are too smooth.</p>
+                    </div>
+                    <div class="p-6 glass rounded-2xl border-l-4 border-blue-500">
+                        <h4 class="font-bold text-sm">Dwell Time (Rhythm)</h4>
+                        <p class="text-xs text-slate-400 mt-2">The duration a key is held. This biometric signal is highly stable for specific users across different devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telemetry Definitions -->
+    <section id="telemetry" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="heading-font text-4xl font-bold mb-12 text-center">Quantitative <span class="text-[#b4975a]">Metrics</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 gold-gradient">Velocity</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase">Pixels / Second</p>
+                    <p class="text-sm text-slate-400">Human acceleration follows a logarithmic curve. Bots move linearly. Velocity helps us spot inhuman precision.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 gold-gradient">Jitter</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase">Variance in Velocity</p>
+                    <p class="text-sm text-slate-400">Humans have unique "micro shakes." Jitter measures the stability of movement between telemetry points.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 gold-gradient">Dwell Time</h3>
+                    <p class="text-xs text-slate-500 mb-4 uppercase">Key Depress Duration</p>
+                    <p class="text-sm text-slate-400">The milliseconds a key remains held. Your unique rhythm is the spacing between these hold events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE SIMULATION DASHBOARD -->
+    <section id="demo" class="py-24 px-6 bg-slate-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="glass p-10 rounded-[40px] shadow-2xl border border-[#b4975a]/20">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+                    <div>
+                        <h2 class="heading-font text-3xl font-bold">Neural Trust Monitor</h2>
+                        <p class="text-slate-400 text-sm">Real time simulation of `dashboard.py` logic</p>
+                    </div>
+                    <div class="text-center">
+                        <div id="trust-display-val" class="text-6xl font-bold text-green-400">100%</div>
+                        <div class="text-[10px] tracking-[0.2em] uppercase text-slate-500 mt-2 font-bold">Identity Confidence</div>
+                    </div>
+                </div>
+
+                <!-- Trust Meter -->
+                <div class="w-full bg-slate-800 h-6 rounded-full mb-12 overflow-hidden p-1">
+                    <div id="trust-fill" class="h-full bg-green-500 rounded-full transition-all duration-500 trust-pulse" style="width: 100%"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-6">Simulation Controls</label>
+                        <input type="range" id="trust-slider" min="0" max="100" value="100" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-[#b4975a] mb-8">
+                        
+                        <div class="space-y-4">
+                            <button onclick="simulateAnomaly()" class="w-full py-4 rounded-xl border border-red-500/30 text-red-400 text-sm font-bold hover:bg-red-500/10 transition-all flex items-center justify-center gap-2">
+                                Simulate Ransomware Velocity
+                            </button>
+                            <button onclick="resetSystem()" class="w-full py-4 rounded-xl border border-green-500/30 text-green-400 text-sm font-bold hover:bg-green-500/10 transition-all">
+                                Recalibrate to Owner Profile
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/40 rounded-2xl p-6 font-mono text-[11px] overflow-hidden border border-white/5">
+                        <div class="flex justify-between mb-4 border-b border-white/10 pb-2">
+                            <span class="text-[#b4975a]">SYSTEM_LOGS.EXE</span>
+                            <span class="text-slate-600">LIVE_FEED</span>
+                        </div>
+                        <div id="log-container" class="space-y-2 h-40 overflow-y-auto">
+                            <div class="text-slate-500">[08:00:01] Wontx AI Kernel Initialized...</div>
+                            <div class="text-green-400">[08:00:05] Identity verified: Owner match.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Honest Report Footer -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6">
+                    <h4 class="font-bold mb-2 text-[#b4975a]">The Accuracy Report</h4>
+                    <p class="text-sm text-slate-400 italic">Operational Accuracy: 76.26%</p>
+                    <p class="text-xs text-slate-500 mt-2">It's not 100%. False positives occur during hardware switches (mouse to trackpad). WONTX AI prioritize locking over leaking data.</p>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold mb-2">Future Improvements</h4>
+                    <ul class="text-xs text-slate-500 space-y-1 list-disc ml-4">
+                        <li>Integrating Gait Analysis via Mobile Sensors</li>
+                        <li>Post Quantum Encryption for Q-Table storage</li>
+                        <li>Application aware Contextual States (Coding vs Gaming)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center px-6">
+        <p class="text-slate-500 text-sm">Wontx AI. Developed for Adaptive Cybersecurity Excellence.</p>
+    </footer>
+
+    <!-- LOCKDOWN OVERLAY -->
+    <div id="lockdown-overlay" class="fixed inset-0 z-[100] bg-red-950/90 backdrop-blur-xl flex flex-col items-center justify-center p-6 opacity-0 pointer-events-none transition-opacity duration-500">
+        <h2 class="heading-font text-5xl font-bold mb-4 text-white uppercase tracking-tighter">System Locked</h2>
+        <p class="text-red-200 text-center max-w-md mb-8">Behavioral confidence dropped below 30%. Potential security breach detected. Neural session terminated.</p>
+        <button id="unlock-btn" class="bg-white text-red-950 px-10 py-4 rounded-full font-bold hover:scale-110 transition-transform">
+            ADMIN BYPASS
+        </button>
+    </div>
+
+    <script>
+        const trustSlider = document.getElementById('trust-slider');
+        const trustFill = document.getElementById('trust-fill');
+        const trustDisplayVal = document.getElementById('trust-display-val');
+        const overlay = document.getElementById('lockdown-overlay');
+        const unlockBtn = document.getElementById('unlock-btn');
+        const logContainer = document.getElementById('log-container');
+
+        function addLog(msg, color = 'text-slate-500') {
+            const div = document.createElement('div');
+            div.className = color;
+            div.innerText = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logContainer.prepend(div);
+        }
+
+        function updateTrustMeter() {
+            const val = parseInt(trustSlider.value);
+            trustFill.style.width = `${val}%`;
+            trustDisplayVal.innerText = `${val}%`;
+            
+            if(val > 70) {
+                trustFill.className = 'h-full bg-green-500 rounded-full transition-all duration-500 trust-pulse';
+                trustDisplayVal.className = 'text-6xl font-bold text-green-400';
+            } else if (val > 30) {
+                trustFill.className = 'h-full bg-yellow-500 rounded-full transition-all duration-500';
+                trustDisplayVal.className = 'text-6xl font-bold text-yellow-500';
+            } else {
+                trustFill.className = 'h-full bg-red-600 rounded-full transition-all duration-500';
+                trustDisplayVal.className = 'text-6xl font-bold text-red-500';
+                triggerLockdown();
+            }
+        }
+
+        function triggerLockdown() {
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-100');
+            addLog('CRITICAL: BREACH DETECTED. SYSTEM LOCKED.', 'text-red-500 font-bold');
+        }
+
+        function simulateAnomaly() {
+            let current = parseInt(trustSlider.value);
+            const interval = setInterval(() => {
+                current -= 5;
+                trustSlider.value = current;
+                updateTrustMeter();
+                if(current <= 25) clearInterval(interval);
+            }, 100);
+        }
+
+        function resetSystem() {
+            trustSlider.value = 100;
+            updateTrustMeter();
+            addLog('System recalibrated. Trust restored.', 'text-green-400');
+        }
+
+        trustSlider.addEventListener('input', updateTrustMeter);
+
+        unlockBtn.addEventListener('click', () => {
+            resetSystem();
+            overlay.classList.remove('opacity-100');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+        });
+    </script>
+</body>
+</html>
