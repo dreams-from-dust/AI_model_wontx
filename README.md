@@ -3,7 +3,7 @@
 
 WONTX AI is an Artificial Intelligence system designed to establish a behavioral firewall around digital workspaces. By monitoring high resolution biometric patterns, specifically mouse velocity and keyboard dwell time, the system maintains biometric integrity to ensure that the active user remains the authorized owner of the session.
 
-## About the App
+## About the System 
 WONTX AI is a security framework that protects your workstation through real time behavioral biometrics. This project represents a shift from static password based security to dynamic, AI driven behavioral authentication. It deploys reinforcement learning to analyze and adapt to human machine interaction patterns.
 
 ## Purpose
