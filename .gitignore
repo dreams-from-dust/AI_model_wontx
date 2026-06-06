@@ -1,7 +1,21 @@
-# Ignore everything you don't want
-node_modules/
-.venv/
+# Python cache
 __pycache__/
+*.py[cod]
+
+# Databases and Training Data
 *.db
 *.npy
+*.sqlite
+q_table.npy
+
+# Environment and Node
+.venv/
+venv/
+env/
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# System files
 .DS_Store
+Thumbs.db
