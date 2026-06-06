@@ -6,7 +6,7 @@ WONTX AI is an Artificial Intelligence system designed to establish a behavioral
 ## About the App
 WONTX AI is a security framework that protects your workstation through real time behavioral biometrics. This project represents a shift from static password based security to dynamic, AI driven behavioral authentication. It deploys reinforcement learning to analyze and adapt to human machine interaction patterns.
 
-## Purpose and Uniqueness
+## Purpose
 Unlike standard security tools that rely on credentials, WONTX AI provides continuous, background verification:
 
 * **Biometric Profiling:** Utilizes a custom reinforcement learning agent to map unique user behavioral signatures.
@@ -16,10 +16,10 @@ Unlike standard security tools that rely on credentials, WONTX AI provides conti
 ## Project Visuals
 | Dashboard | Profile Lab | Reinforcement Optimizer |
 | :---: | :---: | :---: |
-| ![Dashboard](images/dashboard.png) | ![Collector](images/collector.png) | ![Trainer](images/dashboard.png) |
+| ![Dashboard](images/dashboard.png) | ![Collector](images/collector.png) | ![Trainer](images/data_training.png) |
 
 | Biometric Diagnostics | Cognitive Model |
-| :---: | :---: | :---: |
+| :---: | :---: |
 | ![Analyzer](images/analyzer.png) | ![Check_Brain](images/brain.png) | 
 
 ## System Demo
@@ -42,13 +42,21 @@ Unlike standard security tools that rely on credentials, WONTX AI provides conti
 * **Visualization:** Matplotlib, TkAgg
 
 ## Documentation
-* [View System Architecture Report](docs/wontx_ai_report.pdfreport.pdf)
+* [View System Architecture Report](docs/wontx_ai_report.pdf)
 * [Presentation Slides](docs/wontx_ai_presentation.pptx)
-* [File for Project explanation and simulation](docs/Simulation.html)
+* [File for Project Explanation and Simulation](docs/Simulation.html)
 
 ## License
 This project is licensed under the Apache License 2.0. See the LICENSE file in the root directory for full legal terms.
 
 ## Developed By
-[Your Name]  
-Subject: Artificial Intelligence
+Areej Fatima
+
+## Course 
+Artificial Intelligence
+
+## Instructor
+Mr. Faisal Hafeez
+
+### Depratment of Information Technology
+### University of Layyah
