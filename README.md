@@ -23,7 +23,7 @@ Unlike standard security tools that rely on credentials, WONTX AI provides conti
 | ![Analyzer](images/analyzer.png) | ![Check_Brain](images/brain.png) | 
 
 ## System Demo
-[Watch the WONTX AI Demo Video](Demo_Video)
+[Watch the WONTX AI Demo Video](Demo_Video.mp4)
 
 ## How to Run the Project
 1. Clone this repository: `git clone [YOUR_REPO_LINK]`
