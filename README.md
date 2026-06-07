@@ -36,7 +36,7 @@ Unlike standard security tools that rely on credentials, WONTX AI provides conti
 8. **Engage:** Return to the dashboard and click **Engage Behavioral Shield**. Move your cursor or use the keyboard to test the system. The agent will monitor your behavior in real time. If the trust score falls below 70 percent, you will see warning logs. If it drops below 30 percent, the system will lock your device.
 
 ## Technologies Used
-* **Core AI:** Python, NumPy, Reinforcement Learning
+* **Core AI:** Python, NumPy, Pandas, Reinforcement Learning
 * **UI Interface:** Customtkinter
 * **Data Handling:** SQLite, Python datetime serialization
 * **Visualization:** Matplotlib, TkAgg
