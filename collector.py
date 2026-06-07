@@ -205,7 +205,7 @@ class WontxAICollector(ctk.CTk):
         # This guarantees buttons and consoles packed at the bottom remain perfectly visible
         self.desc_lbl = ctk.CTkLabel(
             self.main_card,
-            text="Natural workspace interactions seed the behavioral matrices. Perform standard typing and navigation workflows to calibrate profile parameters.",
+            text="Workspace interactions seed the behavioral matrices. Perform standard typing and navigation workflows to calibrate profile parameters.",
             font=("Google Sans", 15), text_color=TEXT_MUTED, wraplength=800
         )
         self.desc_lbl.pack(side="top", pady=(25, 15), padx=40)

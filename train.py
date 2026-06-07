@@ -131,7 +131,7 @@ class WontxAITrainerUI(ctk.CTk):
         self.main_card = ctk.CTkFrame(self, fg_color=GLASS_BG, border_color=BORDER_DARK, border_width=1, corner_radius=12)
         self.main_card.grid(row=1, column=0, sticky="nsew", padx=45, pady=(15, 35))
         
-        self.desc_lbl = ctk.CTkLabel(self.main_card, text="Advanced reinforcement engine processing deep state action matrices to optimize predictive accuracy for neural convergence.", font=("Google Sans", 15), text_color=TEXT_MUTED, wraplength=800)
+        self.desc_lbl = ctk.CTkLabel(self.main_card, text="Advanced reinforcement engine processing deep state action matrices to optimize predictive accuracy for behavioral convergence.", font=("Google Sans", 15), text_color=TEXT_MUTED, wraplength=800)
         self.desc_lbl.pack(side="top", pady=(25, 15), padx=40)
 
         self.params_grid = ctk.CTkFrame(self.main_card, fg_color="transparent")
